@@ -20,17 +20,17 @@ En este caso se realizó un análisis exploratorio de datos que se encuentra en 
 
 Los pasos necesarios para limpiar los datos se muestran en el diagrama a continuación donde se muestra el proceso de limpieza propuesto para crímenes
 
-![Diagram](https://github.com/LauGon27/03_PRUEBAS/blob/8c6be0a0bb76164ac8cb8c9632267f82f20fb6e7/05_readme_info/limpieza.png)
+![Diagram](https://github.com/LauGon27/03_PRUEBAS/blob/e615a7aee198ff18cfd5ae978ef8414936288f75/05_readme_info/limpieza.png)
 
 ## Definir el modelo de datos
 
 El modelo que se definió en este caso es un modelo entidad relación:
 
-![Diagram](https://github.com/LauGon27/03_PRUEBAS/blob/8c6be0a0bb76164ac8cb8c9632267f82f20fb6e7/05_readme_info/modelo_conceptual.png)
+![Diagram](https://github.com/LauGon27/03_PRUEBAS/blob/e615a7aee198ff18cfd5ae978ef8414936288f75/05_readme_info/modelo_conceptual.png)
 
 La arquitectura que se propone para el proceso se desarrolla en AWS como se muestra a continuación:
 
-![Diagram](https://github.com/LauGon27/03_PRUEBAS/blob/8c6be0a0bb76164ac8cb8c9632267f82f20fb6e7/05_readme_info/Arquitectura.png)
+![Diagram](https://github.com/LauGon27/03_PRUEBAS/blob/e615a7aee198ff18cfd5ae978ef8414936288f75/05_readme_info/Arquitectura.png)
 
 La razón de seleccionar los servicios de AWS es debido a que es la nube con la que he interactuado en el momento, al igual que las demás herramientas utilizadas para desarrollar el ejercicio, de igual forma el ejercicio realizado fue útil como preparación para la certificación de AWS Cloud Practitioner para la cual me estoy preparando. Pero esto no significa que no este abierta a trabajar en otras herramientas y de igual forma me parece importante estar lista para aprender nuevas herramientas. 
 
