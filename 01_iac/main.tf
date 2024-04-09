@@ -21,6 +21,10 @@ resource "aws_s3_bucket" "s3_curated_bucket" {
   bucket = var.name_s3_curated_bucket
 }
 
+resource "aws_s3_bucket" "s3_jobs_dev_bucket" {
+  bucket = var.name_s3_curated_bucket
+}
+
 resource "aws_glue_crawler" "crawler_raw_zone" {
   database_name = "crimes_database_raw_dev"
   name          = "crawler-crimes-raw-dev"

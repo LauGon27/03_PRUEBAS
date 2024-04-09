@@ -5,13 +5,19 @@ variable "aws_region" {
 }
 
 variable "name_s3_raw_bucket"{
-    description = "Value of the Name tag for the S3 bucket"
+    description = "S3 bucket Raw"
     type = string
     default = "crimes-raw-dev"
 }
 
 variable "name_s3_curated_bucket"{
-    description = "Value of the Name tag for the S3 bucket"
+    description = "S3 bucket Curated"
     type = string
     default = "crimes-curated-dev"
+}
+
+variable "name_s3_job_dev_bucket"{
+    description = "S3 bucket JOBA"
+    type = string
+    default = "jobs-files-dev"
 }
