@@ -1,8 +1,8 @@
-# 03_PRUEBAS
-Repositorio donde se guardarán ejercicios que serán realizados para distintas pruebas.
+# Proyecto Crímenes y Víctimas
+.
 
-## Alcance del Proyecto y captura de Datos 
----
+## Alcance del Proyecto y captura de Datos
+--- 
 
 Los datos que se utilizaran para este estudio están relacionados con incidentes de crímenes de la ciudad de Chicago desde el año 2001 hasta la actualidad (Exceptuando asesinatos). La información es extraída del sistema CLEAR (Citizen Law Enforcement Analysis and Reporting) del Departamento de Policía de Chicago.
 Crimes - 2001 to Present | City of Chicago | Data Portal (https://data.cityofchicago.org/Public-Safety/Crimes-2001-to-Present/ijzp-q8t2/about_data)
