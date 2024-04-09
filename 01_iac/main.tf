@@ -22,12 +22,11 @@ resource "aws_s3_bucket" "s3_curated_bucket" {
 }
 
 resource "aws_s3_bucket" "s3_jobs_dev_bucket" {
-  bucket = var.name_s3_curated_bucket
+  bucket = var.name_s3_job_dev_bucket
 }
-
 resource "aws_glue_crawler" "crawler_raw_zone" {
   database_name = "crimes_database_raw_dev"
-  name          = "crawler-crimes-raw-dev"
+  name          = "crawler-crimes-raw-dev/"
   role          = "arn:aws:iam::730335317825:role/glue-rol"
   s3_target {
     path = "s3://crimes-raw-dev"
@@ -38,7 +37,7 @@ resource "aws_glue_crawler" "crawler_raw_zone" {
 
 resource "aws_glue_crawler" "crawler_curated_zone" {
   database_name = "crimes_database_curated_dev"
-  name          = "crawler-crimes-curated-dev"
+  name          = "crawler-crimes-curated-dev/"
   role          = "arn:aws:iam::730335317825:role/glue-rol"
   s3_target {
     path = "s3://crimes-curated-dev"
@@ -55,9 +54,9 @@ resource "aws_glue_job" "crimes_job" {
   max_capacity = 2
   timeout      = 10
   command {
-    name            = "crimes_job_dev"
+    name            = "crimes.py"
     python_version  = 3.0
-    script_location = ""
+    script_location = "s3://jobs-files-dev/src/"
     }
 }
 
